@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nireeksha Shreya Alva | AI &amp; ML Portfolio</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f7f6f2;--card:#fff;--ink:#1c1b19;--mute:#6b6a64;--line:#e4e2da;--acc:#0f766e;--accbg:#d9f0ec}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14161a;--card:#1d2026;--ink:#ecebe6;--mute:#9b9a94;--line:#2b2f37;--acc:#5eead4;--accbg:#173a37}}
+:root[data-theme="dark"]{--bg:#14161a;--card:#1d2026;--ink:#ecebe6;--mute:#9b9a94;--line:#2b2f37;--acc:#5eead4;--accbg:#173a37}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px 60px}
+nav{display:flex;gap:6px;flex-wrap:wrap;padding:14px 0;align-items:center;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+nav a{color:var(--mute);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:99px}
+nav a:hover{color:var(--ink);background:var(--card)}
+nav button{margin-left:auto}
+button,.chip{font:inherit;cursor:pointer}
+.tg{background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:5px 12px;font-size:14px}
+h1{font-size:clamp(32px,7vw,52px);line-height:1.1;margin:36px 0 10px}
+h1 span{color:var(--acc)}
+.lead{font-size:18px;color:var(--mute);max-width:640px;margin:0 0 20px}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.btn{background:var(--acc);color:var(--bg);border:0;border-radius:10px;padding:10px 16px;font-weight:600;text-decoration:none;font-size:15px}
+.btn.o{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:34px 0 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.stat b{display:block;font-size:26px;color:var(--acc)}.stat small{color:var(--mute)}
+h2{font-size:24px;margin:52px 0 14px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:6px 14px;font-size:14px}
+.chip.on{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;cursor:pointer;transition:transform .15s}
+.card:hover{transform:translateY(-2px)}
+.card h3{margin:0 0 4px;font-size:18px}
+.card p{margin:6px 0;color:var(--mute);font-size:15px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.tags i{font-style:normal;font-size:12px;background:var(--accbg);color:var(--acc);padding:2px 8px;border-radius:99px}
+.more{display:none;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.more li{margin:4px 0;font-size:14.5px}
+.card.open .more{display:block}
+.hint{font-size:12px;color:var(--mute)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.panel{display:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.panel.on{display:block}
+.panel h3{margin:0}.panel .meta{color:var(--mute);font-size:14px;margin-bottom:8px}
+.panel li{margin:7px 0}
+.skills{display:flex;gap:8px;flex-wrap:wrap}
+.sk{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 12px;font-size:14px}
+.sk.hide{display:none}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+footer{color:var(--mute);font-size:13px;margin-top:40px}
+</style></head>
+<body><div class="wrap">
+<nav>
+<a href="#work">Projects</a><a href="#exp">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+<button class="tg" id="theme" aria-label="Toggle theme">Theme</button>
+</nav>
+
+<header>
+<h1>Hi, I'm Nireeksha.<br>I build <span>AI that works on messy, real data.</span></h1>
+<p class="lead">Final-year B.Tech CS (AI &amp; ML) student at Manipal Institute of Technology. I turn noisy data into measured improvements, from computer vision pipelines to scheduling apps.</p>
+<div class="cta"><a class="btn" href="#work">See my work</a><a class="btn o" href="https://github.com/nireeksha-shreya" target="_blank" rel="noopener">GitHub</a><a class="btn o" href="https://linkedin.com/in/nireeksha-alva-aa2315361" target="_blank" rel="noopener">LinkedIn</a></div>
+<div class="stats">
+<div class="stat"><b data-n="3.2" data-s="x">0</b><small>more text recovered on phone scans</small></div>
+<div class="stat"><b data-n="94" data-s="%">0</b><small>scan-rejection recall (from 82%)</small></div>
+<div class="stat"><b data-n="0.004" data-s="">0</b><small>CER on noisy receipts (from 0.27)</small></div>
+<div class="stat"><b data-n="34" data-s="">0</b><small>tasks scheduled across 7 equipment types</small></div>
+</div>
+</header>
+
+<section id="work">
+<h2>Projects</h2>
+<div class="chips" id="pf">
+<button class="chip on" data-f="all">All</button><button class="chip" data-f="cv">Computer vision</button><button class="chip" data-f="app">Apps</button><button class="chip" data-f="genai">GenAI</button>
+</div>
+<div class="grid" id="pg">
+<div class="card" data-t="app genai"><h3>Smart Kitchen Scheduler</h3><p>Resource-aware scheduler for restaurant and cloud-kitchen planning.</p>
+<div class="tags"><i>Python</i><i>Flask</i><i>scikit-learn</i><i>Gemini API</i></div>
+<ul class="more"><li>Coordinates 34 preparation tasks across 7 equipment types while respecting dependencies.</li><li>Converts free-text recipes into editable structured tasks with Gemini.</li><li>Random Forest duration prediction and AI schedule explanations.</li></ul><div class="hint">Tap for details</div></div>
+<div class="card" data-t="cv"><h3>Real-Time Drowsiness Alert</h3><p>Webcam system that detects closed eyes and warns the driver.</p>
+<div class="tags"><i>TensorFlow/Keras</i><i>OpenCV</i><i>MediaPipe</i></div>
+<ul class="more"><li>CNN classifies eye state from 64x64 grayscale eye images.</li><li>MediaPipe facial landmarks analyse both eyes in real time.</li><li>Audio alert after 20 consecutive closed-eye frames.</li></ul><div class="hint">Tap for details</div></div>
+<div class="card" data-t="cv app"><h3>Seasonal Color Analysis</h3><p>Upload a face photo and get your seasonal palette.</p>
+<div class="tags"><i>Streamlit</i><i>OpenCV</i><i>NumPy</i><i>Pillow</i></div>
+<ul class="more"><li>Assigns 1 of 4 seasonal palettes using LAB skin tone, brightness and hair-skin contrast.</li><li>Thresholds calibrated on 500 processed face images.</li><li>Outputs 8 recommended and 5 avoid colors as a downloadable PNG swatch card.</li></ul><div class="hint">Tap for details</div></div>
+</div>
+</section>
+
+<section id="exp">
+<h2>Experience</h2>
+<div class="tabs"><button class="chip on" data-p="p1">4Square Innovations</button><button class="chip" data-p="p2">Exelon Circuits</button></div>
+<div class="panel on" id="p1"><h3>ML / Computer Vision Intern</h3><div class="meta">4Square Innovations UAB (Remote, Vilnius) | Jun to Jul 2026</div>
+<ul><li>Cut character error rate on degraded documents from 0.40 to 0.30 (0.27 to 0.004 on noisy receipts) with a deskew, deblur, upscale and median-filter pipeline.</li>
+<li>Raised scan-rejection recall from 0.82 to 0.94 at 0.99 ROC-AUC by replacing a fixed threshold rule with a trained classifier.</li>
+<li>Traced poor phone-scan results to 960px engine downscaling; higher detection resolution and tiling recovered 3.2x more text (word recall 0.11 to 0.36).</li>
+<li>Compared candidate LLMs on task-specific performance rather than published benchmarks to select the best models.</li></ul></div>
+<div class="panel" id="p2"><h3>UI/UX Design Intern</h3><div class="meta">Exelon Circuits Pvt. Ltd. | Jul 2024</div>
+<ul><li>Turned written requirements into stakeholder-approved interface specifications.</li><li>Built Figma wireframes and interactive prototypes for user portals.</li></ul></div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="chips" id="sf"><button class="chip on" data-k="all">All</button><button class="chip" data-k="lang">Languages</button><button class="chip" data-k="ml">AI / ML</button><button class="chip" data-k="app">Apps &amp; tools</button></div>
+<div class="skills">
+<span class="sk" data-k="lang">Python</span><span class="sk" data-k="lang">Java</span><span class="sk" data-k="lang">C</span><span class="sk" data-k="lang">SQL</span>
+<span class="sk" data-k="ml">PyTorch</span><span class="sk" data-k="ml">TensorFlow</span><span class="sk" data-k="ml">scikit-learn</span><span class="sk" data-k="ml">OpenCV</span><span class="sk" data-k="ml">PaddleOCR</span><span class="sk" data-k="ml">MediaPipe</span><span class="sk" data-k="ml">LLM evaluation</span><span class="sk" data-k="ml">Generative AI</span>
+<span class="sk" data-k="app">Flask</span><span class="sk" data-k="app">Streamlit</span><span class="sk" data-k="app">REST APIs</span><span class="sk" data-k="app">Gemini API</span><span class="sk" data-k="app">Git</span><span class="sk" data-k="app">Figma</span><span class="sk" data-k="lang">CUDA</span><span class="sk" data-k="lang">OpenCL</span><span class="sk" data-k="lang">MPI</span>
+</div>
+</section>
+
+<section id="contact">
+<h2>Let's talk</h2>
+<div class="contact"><p style="margin-top:0">Open to internships and entry-level roles in data, AI/ML and software engineering.</p>
+<div class="cta"><button class="btn" id="copy">Copy email</button><a class="btn o" href="mailto:shreyanireeksha@gmail.com">Send an email</a></div>
+<p class="hint" id="msg" style="margin-bottom:0">shreyanireeksha@gmail.com | Udupi, Karnataka, India</p></div>
+</section>
+<footer>B.Tech CS (AI &amp; ML), Manipal Institute of Technology, 2023 to 2027</footer>
+</div>
+<script>
+const $=(s,r=document)=>[...r.querySelectorAll(s)];
+$('#pf .chip').forEach(b=>b.onclick=()=>{$('#pf .chip').forEach(x=>x.classList.toggle('on',x===b));
+$('#pg .card').forEach(c=>c.style.display=(b.dataset.f==='all'||c.dataset.t.includes(b.dataset.f))?'':'none')});
+$('.card').forEach(c=>c.onclick=()=>c.classList.toggle('open'));
+$('.tabs .chip').forEach(b=>b.onclick=()=>{$('.tabs .chip').forEach(x=>x.classList.toggle('on',x===b));$('.panel').forEach(p=>p.classList.toggle('on',p.id===b.dataset.p))});
+$('#sf .chip').forEach(b=>b.onclick=()=>{$('#sf .chip').forEach(x=>x.classList.toggle('on',x===b));$('.sk').forEach(s=>s.classList.toggle('hide',b.dataset.k!=='all'&&s.dataset.k!==b.dataset.k))});
+$('#theme').onclick=()=>{const r=document.documentElement,d=matchMedia('(prefers-color-scheme: dark)').matches;const cur=r.dataset.theme||(d?'dark':'light');r.dataset.theme=cur==='dark'?'light':'dark'};
+$('#copy').onclick=async()=>{const m=$('#msg')[0];try{await navigator.clipboard.writeText('shreyanireeksha@gmail.com');m.textContent='Email copied to clipboard'}catch(e){m.textContent='Copy failed. Email: shreyanireeksha@gmail.com'}};
+$('.stat b').forEach(el=>{const n=parseFloat(el.dataset.n),s=el.dataset.s,dec=(el.dataset.n.split('.')[1]||'').length;let t=0;const step=()=>{t+=0.04;const v=n*Math.min(t,1);el.textContent=v.toFixed(dec)+s;if(t<1)requestAnimationFrame(step)};step()});
+</script></body></html>
